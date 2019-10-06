@@ -8,6 +8,16 @@ namespace Models
 {
     public class Pikachu : Pokemon
     {
+        public Pikachu()
+        {
+
+        }
+
+        public Pikachu(string nickname)
+        {
+            Nickname = nickname;
+        }
+
         public override string Name => nameof(Pikachu);
 
         public override Type PrimaryType => Type.Electric;
