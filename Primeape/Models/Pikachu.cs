@@ -22,6 +22,6 @@ namespace Models
 
         public override Type PrimaryType => Type.Electric;
 
-        public override Type? SecondaryType => null;
+        public override Type SecondaryType => Type.None;
     }
 }

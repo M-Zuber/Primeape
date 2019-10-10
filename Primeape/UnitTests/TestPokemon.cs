@@ -13,7 +13,7 @@ namespace UnitTests
 
         public override Models.Type PrimaryType => Models.Type.Fighting;
 
-        public override Models.Type? SecondaryType => Models.Type.Flying;
+        public override Models.Type SecondaryType => Models.Type.Flying;
     }
 
     public class SingleType : Pokemon
@@ -22,6 +22,6 @@ namespace UnitTests
 
         public override Models.Type PrimaryType => Models.Type.Fighting;
 
-        public override Models.Type? SecondaryType => null;
+        public override Models.Type SecondaryType => Models.Type.None;
     }
 }
