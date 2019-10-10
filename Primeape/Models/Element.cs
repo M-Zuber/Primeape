@@ -8,6 +8,7 @@ namespace Models
 {
     public enum Type
     {
+        None,
         Normal,
         Fire,
         Fighting,

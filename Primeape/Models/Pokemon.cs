@@ -11,9 +11,9 @@ namespace Models
         public abstract string Name { get; }
         public string Nickname { get; set; }
         public abstract Type PrimaryType { get; }
-        public abstract Type? SecondaryType { get; }
+        public abstract Type SecondaryType { get; }
 
-        public string PrintFriendlyType => $"{PrimaryType}{(SecondaryType.HasValue ? $"/{SecondaryType}" : "")}";
+        public string PrintFriendlyType => $"{PrimaryType}{(SecondaryType != Type.None ? $"/{SecondaryType}" : "")}";
 
         public override string ToString()
         {
